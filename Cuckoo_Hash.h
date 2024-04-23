@@ -12,7 +12,8 @@ class Cuckoo_Hash
 private:
     /* data */
     std::map<unsigned __int64,unsigned __int64> cuckoo_map;
-    HashFunction *cuckoo_hash, *fingerprint;
+    HashFunction* cuckoo_hash = new HashFunction();
+    HashFunction* fingerprint = new HashFunction();
 public:
     Cuckoo_Hash(/* args */);
     ~Cuckoo_Hash();

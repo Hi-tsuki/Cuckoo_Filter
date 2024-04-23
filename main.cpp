@@ -11,7 +11,7 @@ int main()
             std::cout << cuckoohash->Insert(y) << std::endl;
         }
         else{
-            cuckoohash->Search(y);
+            std::cout << cuckoohash->Search(y) << std::endl;
         }
     }
     return 0;
